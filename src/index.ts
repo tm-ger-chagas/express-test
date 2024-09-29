@@ -5,6 +5,7 @@ const app = express();
 const PORT = 3000;
 
 app.get("/api/users", (request: Request, response: Response, next) => {
+  console.log("HELLO WORLD")
   response.send({ some: "json" });
 });
 
